@@ -1,0 +1,36 @@
+main: com.scorchedcode.wolfplzz.Eco.WolfplzzEco
+name: WolfplzzEco
+version: 1.0
+author: DownToEarthDev
+depends: [Vault]
+api-version: 1.13
+commands:
+  buycommand:
+    usage: "/buycommand <command name>"
+    description: "Buys the specified command!"
+    permission: wolfplzzeco.buy
+  rentcommand:
+    usage: "/rentcommand <command name>"
+    description: "Rents the specified command!"
+    permission: wolfplzzeco.rent
+  listpaidcommands:
+    usage: "/listpaidcommands"
+    description: "Lists commands available to rent to buy!"
+    permission: wolfplzzeco.list
+  reloadwolfplzzeco:
+    usage: "/reloadwolfplzzeco"
+    description: "Reloads plugin configuration"
+    permission: wolfplzzeco.reload
+permissions:
+  wolfplzzeco.buy:
+    description: Grants ability to use /buycommand
+    default: op
+  wolfplzzeco.rent:
+    description: Grants ability to use /rentcommand
+    default: op
+  wolfplzzeco.list:
+    description: Grants ability to use /listcommand
+    default: op
+  wolfplzzeco.reload:
+    description: Grants ability to use /reloadwolfplzzeco
+    default: op

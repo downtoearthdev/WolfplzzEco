@@ -1,0 +1,25 @@
+join-commands:
+  someplayer:
+    run-as-player: "commandname arg1 arg2"
+    run-as-server: "commandname arg1 arg2"
+    wait-time: 20
+pay-commands:
+  commandalias:
+    type: "rent"
+    price: 100.00
+    run-as-player: "commandname {player}"
+    run-as-server: "commandname arg1"
+    time: 5
+    warning: 2
+    expire-as-player: "uncommandname"
+    expire-as-server: "uncommandname {player}"
+  anothercommand:
+    type: "buy"
+    price: 250.00
+    permission: "some.permission"
+  yetanotherbloodycommand:
+    type: "buyonce"
+    price: 9000.00
+    run-as-player: "commandname arg1 arg2"
+    run-as-server: "commandname {player} arg1 arg2"
+rent-expire-message: "{command} will expire in {timeleft}"
