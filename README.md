@@ -4,7 +4,9 @@
 - /rentcommand <command name\> *wolfplzzeco.rent*
 - /listpaidcommands *wolfplzzeco.list*
 - /reloadwolfplzzeco *wolfplzzeco.reload*
+
 **Configuration:**
+
 ~~~
 join-commands: //Commands that execute on join
   someplayer:
